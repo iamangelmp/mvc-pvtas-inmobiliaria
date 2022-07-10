@@ -10,10 +10,17 @@ const formularioRegister = (req, res)=>{
         title: 'Registro',
         response: false
     });
+}
 
+const formularioRecuperaPass = (req, res)=>{
+    res.render('auth/recover',{
+        title: 'Recupera password',
+        response: false
+    });
 }
 
 export {
     formularioLogin,
-    formularioRegister
+    formularioRegister,
+    formularioRecuperaPass
 }
