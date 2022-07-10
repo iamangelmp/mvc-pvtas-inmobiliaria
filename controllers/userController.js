@@ -1,11 +1,15 @@
 const formularioLogin = (req, res)=>{
      res.render('auth/login',{
-        response: false
+        response: false,
+        title: 'Login'
      })
 }
 
 const formularioRegister = (req, res)=>{
-    res.render('auth/registro',{});
+    res.render('auth/registro',{
+        title: 'Registro',
+        response: false
+    });
 
 }
 

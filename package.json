@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node ./index.js",
-    "server": "nodemon index.js",
-    "css": "postcss public/css/tailwind.css -o public/css/app.css"
+    "server": "nodemon index.js postcss public/css/tailwind.css -o public/css/app.css --watch",
+    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch"
   },
   "keywords": [],
   "author": "Ángel Márquez",
