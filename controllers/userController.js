@@ -1,3 +1,5 @@
+import Usuario from '../models/Usuario.js'
+
 const formularioLogin = (req, res)=>{
      res.render('auth/login',{
         response: false,
@@ -12,6 +14,13 @@ const formularioRegister = (req, res)=>{
     });
 }
 
+const registrar = async (req, res)=>{
+    //res.json({mesage:'Creando usuario...'})
+    console.log(req.body)
+    // const usuario = await Usuario.create(req.body);
+    // res.json(usuario)
+}
+
 const formularioRecuperaPass = (req, res)=>{
     res.render('auth/recover',{
         title: 'Recupera password',
@@ -22,5 +31,6 @@ const formularioRecuperaPass = (req, res)=>{
 export {
     formularioLogin,
     formularioRegister,
+    registrar,
     formularioRecuperaPass
 }

@@ -1,5 +1,5 @@
 import express from "express";
-import { formularioLogin, formularioRegister, formularioRecuperaPass } from "../controllers/userController.js";
+import { formularioLogin, formularioRegister, registrar, formularioRecuperaPass } from "../controllers/userController.js";
 
 const router = express.Router();
 
@@ -16,6 +16,7 @@ const router = express.Router();
   router.get('/login', formularioLogin)
 
   router.get('/register', formularioRegister )
+  router.post('/register', registrar )
 
   router.get('/recover', formularioRecuperaPass)
 
